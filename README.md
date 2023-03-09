@@ -31,7 +31,7 @@
 > Following technologies have been used in this project.
 
 <details>
-  <summary>Database</summary>
+  <summary>Programming Languagr </summary>
   <ul>
     <li><a href="https://www.ruby.org/">Ruby</a></li>
   </ul>
@@ -41,7 +41,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> OOP SCHOOL LIBRARY is an educational school library app that records the available books and the records of borrowed books and who borrows them.
+- Create students with id, name, age, and permissions
+- Create teachers with id, name, age, specification, and permissions
+- Create a Classroom with a teacher, student, and Sublect (specification)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,11 +82,17 @@ Use npm install after cloning this project
 - [ ] Copy index.html file path and paste it in your browser url.
 - [ ] now the project will be running.
 
+### Future Features
+
+- Create books with titles, authors, book covers, and condition
+- Add rental using student/teacher ID and book
+- List all books, persons, and rentals
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **tanveerisonline **
 
