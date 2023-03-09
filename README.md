@@ -124,6 +124,6 @@ If you're committed to making the world a better place, please support our proje
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/tanveerisonline/Oop_School_Library.git) licensed.
+This project is [MIT](https://github.com/tanveerisonline/Oop_School_Library/blob/main/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
