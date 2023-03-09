@@ -15,21 +15,19 @@ class Person < Nameable
     @parent_permission = parent_permission
   end
 
-  # rubocop:disable Naming/PredicateName
-  def is_of_age?
+  def of_age?
     age >= 18
   end
-  # rubocop:enable Naming/PredicateName
 
   def can_use_services?
-    is_of_age? || @parent_permission
+    of_age? || @parent_permission
   end
 
   def correct_name
     @name
   end
 
-  private :is_of_age?
+  private :of_age?
 end
 
 person = Person.new(22, 'maximilianus')
