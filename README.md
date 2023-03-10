@@ -69,18 +69,17 @@ Clone this repository by using the command line : git clone https://github.com/t
 
 ### Install
 
-Install this project with:
+Install this ruby on your machine
 
-Use npm install after cloning this project
+Use bundle install after cloning this project to install Gems
 
 ### Usage
 
 - [ ] First you need to download this repo or clone this repo.
 - [ ] Open this project in your local machine.
 - [ ] Open Terminal in your machine.
-- [ ] run npm install in your terninal to install necessary required dependencies for this project.
-- [ ] Copy index.html file path and paste it in your browser url.
-- [ ] now the project will be running.
+- [ ] run bundle install in your terninal to install necessary required dependencies or gems for this project.
+- [ ] now run the project from the terminal.
 
 ### Future Features
 
