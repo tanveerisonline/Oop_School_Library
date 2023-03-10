@@ -16,11 +16,9 @@ class Person < Nameable
     @rentals = []
   end
 
-  # rubocop:disable Naming/PredicateName
   def of_age?
     age >= 18
   end
-  # rubocop:enable Naming/PredicateName
 
   def can_use_services?
     of_age? || @parent_permission
