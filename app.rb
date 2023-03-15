@@ -55,30 +55,30 @@ class App
     end
   end
 
-   def create_person
-     person = CreatePerson.new(@people)
-     person.create_person
-   end
+  def create_person
+    person = CreatePerson.new(@people)
+    person.create_person
+  end
 
-   def create_book
-     CreateBook.new.create_book(@books)
-   end
+  def create_book
+    CreateBook.new.create_book(@books)
+  end
 
-   def list_people
-     @people.each_with_index do |person, index|
-       puts "#{index + 1}) [#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
-     end
-   end
+  def list_people
+    @people.each_with_index do |person, index|
+      puts "#{index + 1}) [#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
+  end
 
-   def list_books
-     ListBooks.new.list_books(@books)
-   end
+  def list_books
+    ListBooks.new.list_books(@books)
+  end
 
-   def create_rental
-     CreateRental.new(@people, @books, @rentals).create_rental
-   end
+  def create_rental
+    CreateRental.new(@people, @books, @rentals).create_rental
+  end
 
-   def list_rental
-     ListRental.new.list_rental(@rentals)
-   end
+  def list_rental
+    ListRental.new.list_rental(@rentals)
+  end
 end
