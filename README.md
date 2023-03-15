@@ -99,6 +99,12 @@ Use bundle install after cloning this project to install Gems
 - Twitter: [@Tanveer Ahmad](https://twitter.com/Tanveer98589023)
 - LinkedIn: [Tanveer Ahmad](https://www.linkedin.com/in/tanveerisonline/)
 
+👤 **Emmanuella Adu **
+
+- GitHub: [@elarhadu ](https://github.com/elarhadu)
+- Twitter:[@elarh_] (https://twitter.com/elarh_)
+- LinkedIn: [Emmanuella Adu] (https://www.linkedin.com/in/emmanuella-adu/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
