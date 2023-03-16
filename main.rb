@@ -1,40 +1,41 @@
-require './app'
-require './input'
-require './data_controller'
+require_relative './app'
+require_relative './display_menu'
+require_relative './create_file_dir'
 
-class Main
-  def initialize
-    @app = App.new
-    @input = Input.new
-  end
-
-  def run
-    user_input = 0
-    puts 'Welcome to School Library App!'
-    while user_input != '7'
-      options
-      user_input = @input.read
-      @app.options_cases(user_input)
-    end
-    puts 'Thank you for using this app!'
-
-    @app.save_people
-    @app.save_books
-    @app.save_rental
-  end
-
-  def options
-    puts
-    puts 'Please choose an option by enterin a number:'
-    puts '1 - List all books'
-    puts '2 - List all people'
-    puts '3 - Create a person'
-    puts '4 - Create a book'
-    puts '5 - Create a rental'
-    puts '6 - List all rentals for a given person id'
-    puts '7 - Exit'
+def main
+  app = App.new
+  Dir.exist?('./data') ? app.read_files : nil
+  loop do
+    display_menu
+    choose_action(app)
   end
 end
 
-main = Main.new
-main.run
+def choose_action(app)
+  choice = gets.chomp
+  case choice
+  when '1'
+    app.display_books
+  when '2'
+    app.display_people
+  when '3'
+    app.create_person
+  when '4'
+    app.create_book
+  when '5'
+    app.create_rental
+  when '6'
+    app.display_rental
+  else
+    exit_app(app)
+  end
+end
+
+def exit_app(app)
+  puts 'Thank you for using this app! Now exiting...'
+  create_dir
+  app.save_files
+  exit
+end
+
+main
