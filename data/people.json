@@ -1,0 +1,1 @@
+[{"ref":"#<Student:0x000001d0a296dfb0>","value":{"id":644,"name":"Tanveer","age":"30","parent_permission":null,"rentals":["#<Rental:0x000001d0a296d010>"],"classroom":"","type":"Student"}},{"ref":"#<Student:0x000001d0a296de20>","value":{"id":445,"name":"Ela","age":"23","parent_permission":null,"rentals":[],"classroom":"Microverse","type":"Student"}}]
