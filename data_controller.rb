@@ -164,9 +164,9 @@ module DataController
 
   private
 
-  def load_data(file)
+  def load_data(file, &block)
     if File.exist?(file) && !File.empty?(file)
-      JSON.parse(File.read(file)).map { |element| yield element }
+      JSON.parse(File.read(file)).map(&block)
     else
       []
     end
