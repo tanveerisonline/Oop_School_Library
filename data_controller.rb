@@ -5,6 +5,8 @@ require './teacher'
 require 'json'
 
 module DataController
+  DATA_DIR = 'data'.freeze
+
   def get_book_by_title(title)
     @books.find { |book| book.title == title }
   end
@@ -14,11 +16,11 @@ module DataController
   end
 
   def load_books
-    load_data('books.json') { |element| Book.new(element['title'], element['author']) }
+    load_data(File.join(DATA_DIR, 'books.json')) { |element| Book.new(element['title'], element['author']) }
   end
 
   def load_people
-    load_data('people.json') do |element|
+    load_data(File.join(DATA_DIR, 'people.json')) do |element|
       if element['data_type'] == 'Teacher'
         Teacher.new(
           id: element['id'].to_i,
@@ -38,7 +40,7 @@ module DataController
   end
 
   def load_rentals
-    load_data('rentals.json') do |element|
+    load_data(File.join(DATA_DIR, 'rentals.json')) do |element|
       person = get_person_by_id(element['person_id'])
       book = get_book_by_title(element['book_title'])
       Rental.new(element['date'], book, person)
@@ -47,7 +49,7 @@ module DataController
 
   def save_books
     data = @books.map { |book| { title: book.title, author: book.author } }
-    save_data('books.json', data)
+    save_data(File.join(DATA_DIR, 'books.json'), data)
   end
 
   def save_people
@@ -60,7 +62,7 @@ module DataController
         **person.to_s
       }
     end
-    save_data('people.json', data)
+    save_data(File.join(DATA_DIR, 'people.json'), data)
   end
 
   def save_rentals
@@ -71,7 +73,7 @@ module DataController
         person_id: rental.person.id
       }
     end
-    save_data('rentals.json', data)
+    save_data(File.join(DATA_DIR, 'rentals.json'), data)
   end
 
   private
@@ -85,6 +87,7 @@ module DataController
   end
 
   def save_data(file, data)
+    FileUtils.mkdir_p(DATA_DIR)
     File.write(file, JSON.generate(data))
   end
 end
