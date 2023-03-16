@@ -9,7 +9,7 @@ class App
   include DataController
   def initialize
     @books = load_books
-    @persons = load_peoble
+    @persons = load_people
     @rentals = load_rentals
     @input = Input.new
   end
