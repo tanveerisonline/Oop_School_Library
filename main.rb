@@ -18,7 +18,7 @@ class Main
     end
     puts 'Thank you for using this app!'
 
-    @app.save_person
+    @app.save_people
     @app.save_books
     @app.save_rental
   end
