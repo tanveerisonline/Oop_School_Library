@@ -1,1 +1,1 @@
-[{"ref":"#<Book:0x00000164dd8021e8>","value":{"title":"Avatar","author":"James cameron","rentals":["#<Rental:0x00000164dd8009b0>"]}}]
+[{"ref":"#<Book:0x000001d0a296e758>","value":{"title":"Avatar","author":"James cameron","rentals":["#<Rental:0x000001d0a296d010>"]}},{"ref":"#<Book:0x000001d0a296c188>","value":{"title":"Titanic ","author":"James cameron","rentals":[]}}]
