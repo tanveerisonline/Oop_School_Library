@@ -41,9 +41,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Create students with id, name, age, and permissions
-- Create teachers with id, name, age, specification, and permissions
-- Create a Classroom with a teacher, student, and Sublect (specification)
+- Create students with id, name, age, and permissions.
+- Create teachers with id, name, age, specification, and permissions.
+- Create a Classroom with a teacher, student, and Sublect (specification).
+- Save and Preserve Data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
